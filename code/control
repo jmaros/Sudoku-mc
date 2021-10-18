@@ -1,0 +1,23 @@
+Source: sudoku
+Section: games
+Priority: optional
+Maintainer: Nicolas FRANCOIS (Nekral) <nicolas.francois@centraliens.net>
+Build-Depends: debhelper (>= 9), libncurses-dev
+Standards-Version: 3.9.3
+#The Homepage used to be:
+#Homepage: http://www.laurasia.com.au/sudoku/
+Homepage: http://sourceforge.net/projects/sudokumc/
+
+Package: sudoku
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: console based sudoku
+ This sudoku puzzle generator/solver features:
+  * character based (curses) interface;
+  * cross-platform (Minix, Unix, Windows) with full source code (ANSI C);
+  * generates hints upon request;
+  * classification of board difficulty (very easy, easy, medium, hard or
+    fiendish);
+  * generation of new boards;
+  * easy entry of boards published in newspapers, internet, etc...;
+  * multiple output formats (text, csv, html, PostScript).

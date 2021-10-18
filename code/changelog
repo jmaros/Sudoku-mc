@@ -1,0 +1,110 @@
+
+sudoku (1.0.1-6) stabler; urgency=low
+
+Ported from Sourceforge to GitHub
+https://sourceforge.net/p/sudokumc/
+Added VS2022 solution file,  vhere the target is SudokuMC.exe
+
+sudoku (1.0.1-5) unstable; urgency=low
+
+  * Added new commands:
+    't' for renaming the title
+    'o' for opening a board
+    'w' for writing out a default template
+
+  * Added early contradiction check to detect when for a given number all the
+    squares are forbidden in a row, col, or block, to facilitate "solving" e.g.
+    the following board:
+
+        % 1221 unsolvable
+         1 2 . | . . . | . . .
+         . . . | 1 2 . | . . .
+         . . . | . . . | 1 2 .
+        -------+-------+-------
+         2 1 . | . . . | . . .
+         . . . | 2 1 . | . . .
+         . . . | . . . | 2 1 .
+        -------+-------+-------
+         . . . | . . . | . . .
+         . . 2 | . . 1 | . . .
+         . . 1 | . . 2 | . . .
+
+  * Fixed some array boundary handling flaws.
+  * Fixed endless loop could occur when trying to load a fully populated board.
+  * Fixed the completeness handling when a fully populated board loaded.
+  * Improved the html output: More proportional display.
+  * Embedded default template (with a 4:1 compression).
+  * Moved the help text of the file related commands to the right side of the
+    screen under a File category.
+  * Improved editing capability with non-destructive white space, and horizontal
+    scrolling the too long text-content in the input field.
+  * Now can be compiled with VisualStudio 2012 Express on Windows Xp/Win7.
+    - Added UNICODE support to curses.c (Needed when the no multibyte option used.)
+    - Corrected the intensity handling on windows.
+       - A_BOLD changed to (FOREGROUND_INTENSITY) used with attron/attroff.
+  * Added makefile for MinGW.
+  * Could not resist the temptation to reformat the source to my favorite style.
+-- Janos Maros <jmaros@users.sourceforge.net>
+
+sudoku (1.0.1-4) unstable; urgency=low
+
+  * debian/compat, debian/control: Use compatibility level 9.
+  * debian/rules: Use minimal dh Makefile
+  * debian/control: Bump Standards-Version to 3.9.3. No changes.
+  * debian/control: Remove dependency on cdbs.
+  * Makefile: Install in /usr per default.
+  * Makefile: Add LDFLAGS.
+  * sudoku.c: Added keystroke to redraw the board in case of screen corruption.
+    Closes: #673288
+  * debian/control: Fix PostScript spelling in description. Closes: #600011
+
+ -- Nicolas FRANCOIS (Nekral) <nicolas.francois@centraliens.net>  Sat, 19 May 2012 20:44:59 +0200
+
+sudoku (1.0.1-3) unstable; urgency=low
+
+  * debian/copyright: Indicate that upstream homepage is no more available.
+    Closes: #470744
+  * Makefile, debian/dirs: Install the binary in /usr/games instead of
+    /usr/bin.
+  * debian/control: Do not mention the Homepage anymore.
+  * debian/control: Bump Standards-Version to 3.7.3. No changes.
+
+ -- Nicolas FRANCOIS (Nekral) <nicolas.francois@centraliens.net>  Sat, 26 Apr 2008 23:40:09 +0200
+
+sudoku (1.0.1-2) unstable; urgency=low
+
+  * Makefile: Do not strip sudoku when it is installed. This fixes the
+    handling of the nostrip build option. Closes: #438072
+
+ -- Nicolas FRANCOIS (Nekral) <nicolas.francois@centraliens.net>  Sat, 25 Aug 2007 22:45:49 +0200
+
+sudoku (1.0.1-1) unstable; urgency=low
+
+  * Initial release Closes: #378167
+
+  * Fix the "save" command (accept \n as \r)
+
+  * rework the Makefile to support DESTDIR.
+
+  * Add a "restart" command to restore a blanked sudoku, with the original
+    digits ("clear" remove all the digits)
+
+  * Fix the "undo" command (the cursor was not going back to the changed
+    digit).
+
+  * change the location of the data files from /usr/lib to /usr/share (and fix
+    the Makefile and man page accordingly).
+
+  * Add a -c<class> option to specify the complexity of the generated board.
+
+  * Use the cbreak mode instead of raw mode to allow signals.
+
+  * Use minus signs instead of hyphens in the man page.
+
+  * Display the time spent for solving the puzzle.
+
+  * Avoid special keys to have be interpreted like another key (e.g. PAGE_UP
+    was 5 and PAGE_DOWN was 6).
+
+ -- Nicolas FRANCOIS (Nekral) <nicolas.francois@centraliens.net>  Mon, 26 Dec 2005 22:40:39 +0100
+
