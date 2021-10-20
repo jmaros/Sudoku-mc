@@ -1,5 +1,14 @@
 # Sudoku-mc
 Sudoku creator and solver command line tool
+(Note: -mc
+ VS2019 and VS2020 projects will create SudokuMC.exe instead of sudoku.exe
+ in hounour of Michael Kennett, in fact it should be MK instead of MC, but
+ for historical reasons I stick with my original mistakenly choosen name.
+ To play the game there is no additional file, or command line argument
+ needed, though you may specify some. The below description was made for
+ the linux version, but it applies for the windows versions too, except
+ for the filepath name conventions.
+)
 
 SYNOPSIS
        (play the game)
