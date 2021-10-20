@@ -23,29 +23,30 @@
     <SccLocalPath />
     <ProjectGuid>{E0FCB2C3-C161-492F-A5AF-F63EDB88F2A5}</ProjectGuid>
     <ProjectName>SudokuMc</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -70,24 +71,24 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>../x32/Debug22/</OutDir>
-    <IntDir>./x32/Debug22/</IntDir>
+    <OutDir>../x32/Debug19/</OutDir>
+    <IntDir>./x32/Debug19/</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>../x64/Debug22/</OutDir>
-    <IntDir>./x64/Debug22/</IntDir>
+    <OutDir>../x64/Debug19/</OutDir>
+    <IntDir>./x64/Debug19/</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>../x32/Release22/</OutDir>
-    <IntDir>./x32/Release22/</IntDir>
+    <OutDir>../x32/Release19/</OutDir>
+    <IntDir>./x32/Release19/</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>../x64/Release22/</OutDir>
-    <IntDir>./x64/Release22/</IntDir>
+    <OutDir>../x64/Release19/</OutDir>
+    <IntDir>./x64/Release19/</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -98,17 +99,17 @@
       <WarningLevel>Level4</WarningLevel>
       <AdditionalIncludeDirectories>..\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;WIN32;_CONSOLE;TEMPLATE="template";PRECANNED="precanned";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AssemblerListingLocation>./x32/Debug22/</AssemblerListingLocation>
+      <AssemblerListingLocation>./x32/Debug19/</AssemblerListingLocation>
       <BrowseInformation>true</BrowseInformation>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
-      <ObjectFileName>./x32/Debug22/</ObjectFileName>
-      <ProgramDataBaseFileName>./x32/Debug22/</ProgramDataBaseFileName>
+      <ObjectFileName>./x32/Debug19/</ObjectFileName>
+      <ProgramDataBaseFileName>./x32/Debug19/</ProgramDataBaseFileName>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Midl>
-      <TypeLibraryName>.\../x32/Debug22\SudokuMc.tlb</TypeLibraryName>
+      <TypeLibraryName>.\../x32/Debug19\SudokuMc.tlb</TypeLibraryName>
     </Midl>
     <ResourceCompile>
       <Culture>0x0c09</Culture>
@@ -116,13 +117,13 @@
     </ResourceCompile>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>./x32/Debug22/SudokuMc.bsc</OutputFile>
+      <OutputFile>./x32/Debug19/SudokuMc.bsc</OutputFile>
     </Bscmake>
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <OutputFile>../x32/Debug22/SudokuMc.exe</OutputFile>
+      <OutputFile>../x32/Debug19/SudokuMc.exe</OutputFile>
       <AdditionalDependencies>kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -137,17 +138,17 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <AdditionalIncludeDirectories>..\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG;WIN32;_CONSOLE;TEMPLATE="template";PRECANNED="precanned";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AssemblerListingLocation>./x64/Debug22/</AssemblerListingLocation>
+      <AssemblerListingLocation>./x64/Debug19/</AssemblerListingLocation>
       <BrowseInformation>true</BrowseInformation>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
-      <ObjectFileName>./x64/Debug22/</ObjectFileName>
-      <ProgramDataBaseFileName>./x64/Debug22/</ProgramDataBaseFileName>
+      <ObjectFileName>./x64/Debug19/</ObjectFileName>
+      <ProgramDataBaseFileName>./x64/Debug19/</ProgramDataBaseFileName>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Midl>
-      <TypeLibraryName>.\../x64/Debug22\SudokuMc.tlb</TypeLibraryName>
+      <TypeLibraryName>.\../x64/Debug19\SudokuMc.tlb</TypeLibraryName>
     </Midl>
     <ResourceCompile>
       <Culture>0x0c09</Culture>
@@ -155,13 +156,13 @@
     </ResourceCompile>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>./x64/Debug22/SudokuMc.bsc</OutputFile>
+      <OutputFile>./x64/Debug19/SudokuMc.bsc</OutputFile>
     </Bscmake>
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <OutputFile>../x64/Debug22/SudokuMc.exe</OutputFile>
+      <OutputFile>../x64/Debug19/SudokuMc.exe</OutputFile>
       <AdditionalDependencies>kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -176,11 +177,11 @@
       <WarningLevel>Level4</WarningLevel>
       <AdditionalIncludeDirectories>..\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;WIN32;_CONSOLE;TEMPLATE="template";PRECANNED="precanned";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AssemblerListingLocation>./x32/Release22/</AssemblerListingLocation>
+      <AssemblerListingLocation>./x32/Release19/</AssemblerListingLocation>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
-      <ObjectFileName>./x32/Release22/</ObjectFileName>
-      <ProgramDataBaseFileName>./x32/Release22/</ProgramDataBaseFileName>
+      <ObjectFileName>./x32/Release19/</ObjectFileName>
+      <ProgramDataBaseFileName>./x32/Release19/</ProgramDataBaseFileName>
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Midl>
@@ -192,12 +193,12 @@
     </ResourceCompile>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>./x32/Release22/SudokuMc.bsc</OutputFile>
+      <OutputFile>./x32/Release19/SudokuMc.bsc</OutputFile>
     </Bscmake>
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <SubSystem>Console</SubSystem>
-      <OutputFile>../x32/Release22/SudokuMc.exe</OutputFile>
+      <OutputFile>../x32/Release19/SudokuMc.exe</OutputFile>
       <AdditionalDependencies>kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -212,15 +213,15 @@
       <WarningLevel>Level4</WarningLevel>
       <AdditionalIncludeDirectories>..\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NDEBUG;WIN32;_CONSOLE;TEMPLATE="template";PRECANNED="precanned";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AssemblerListingLocation>./x64/Release22/</AssemblerListingLocation>
+      <AssemblerListingLocation>./x64/Release19/</AssemblerListingLocation>
       <PrecompiledHeaderOutputFile>
       </PrecompiledHeaderOutputFile>
-      <ObjectFileName>./x64/Release22/</ObjectFileName>
-      <ProgramDataBaseFileName>./x64/Release22/</ProgramDataBaseFileName>
+      <ObjectFileName>./x64/Release19/</ObjectFileName>
+      <ProgramDataBaseFileName>./x64/Release19/</ProgramDataBaseFileName>
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Midl>
-      <TypeLibraryName>.\../Release22\SudokuMc.tlb</TypeLibraryName>
+      <TypeLibraryName>.\../Release19\SudokuMc.tlb</TypeLibraryName>
     </Midl>
     <ResourceCompile>
       <Culture>0x0c09</Culture>
@@ -228,12 +229,12 @@
     </ResourceCompile>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>./x64/Release22/SudokuMc.bsc</OutputFile>
+      <OutputFile>./x64/Release19/SudokuMc.bsc</OutputFile>
     </Bscmake>
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <SubSystem>Console</SubSystem>
-      <OutputFile>../x64/Release22/SudokuMc.exe</OutputFile>
+      <OutputFile>../x64/Release19/SudokuMc.exe</OutputFile>
       <AdditionalDependencies>kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
