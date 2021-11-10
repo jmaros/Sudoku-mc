@@ -1,9 +1,11 @@
 
-sudoku (1.0.1-6) stabler; urgency=low
+sudoku (1.0.2) stable; urgency=low
 
 Ported from Sourceforge to GitHub
 https://sourceforge.net/p/sudokumc/
-Added VS2022 solution file,  vhere the target is SudokuMC.exe
+
+Added VS2022 solution file,  vhere the target is [x64|x32][Release|Debug]22/SudokuMC.exe
+Added VS2019 solution file,  vhere the target is [x64|x32][Release|Debug]19/SudokuMC.exe
 
 sudoku (1.0.1-5) unstable; urgency=low
 
